@@ -1,0 +1,46 @@
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from .models import Post, BlogComment
+from django.urls import reverse_lazy
+from .forms import SignUpForm, CommentForm
+from django.contrib.auth.views import LoginView
+from django.shortcuts import render, redirect
+
+
+# Create your views here.
+
+class BlogListView(ListView):
+    model = Post
+    template_name = 'home.html'
+
+
+class BlogDetailView(DetailView):
+    model = Post
+    template_name = 'post_detail.html'
+
+
+class BlogCreateView(CreateView):
+    model = Post
+    template_name = 'post_new.html'
+    fields = ['title', 'author', 'body']
+
+
+class BlogUpdateView(UpdateView):
+    model = Post
+    template_name = 'post_edit.html'
+    fields = ['title', 'body']
+
+
+class BlogDeleteView(DeleteView):
+    model = Post
+    template_name = 'post_delete.html'
+    success_url = reverse_lazy('home')
+
+
+class SignUpView(CreateView):
+    form_class = SignUpForm
+    template_name = 'signup.html'
+    success_url = reverse_lazy('home')
+
+
+class AdminLogin(LoginView):
+    template_name = 'login.html'

@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: davidoluwatobi41@gmail.com
+Date: Mon, 26 Apr 2021 10:53:49 -0000
+Message-ID: <161943442956.7508.4525622451413057711@DESKTOP-BM5HPLE>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/password-reset-confirm/Mg/alpnpp-5acf8fcc22f1aa6e6d8022c46afffce4/
+
+Your username, in case you’ve forgotten: Zuri
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

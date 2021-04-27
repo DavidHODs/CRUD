@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Registration Page</h2>
+<form method='post'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type='submit'>Register</button>
+    <br><br>
+</form>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet'>
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock content %}

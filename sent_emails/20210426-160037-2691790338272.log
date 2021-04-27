@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: davidoluwatobi41@gmail.com
+Date: Mon, 26 Apr 2021 15:00:37 -0000
+Message-ID: <161944923751.8764.8643596422092839485@DESKTOP-BM5HPLE>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/password-reset-confirm/MQ/alpz50-d357e867125b3a0d1fa3a9a2b426b2a6/
+
+Your username, in case you’ve forgotten: HOD
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

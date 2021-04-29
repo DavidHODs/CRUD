@@ -1,7 +1,7 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, BlogComment
+from .models import Post
 from django.urls import reverse_lazy
-from .forms import SignUpForm, CommentForm
+from .forms import SignUpForm
 from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect
 

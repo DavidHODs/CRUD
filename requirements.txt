@@ -4,7 +4,6 @@ aiohttp-socks==0.4.1
 alabaster==0.7.12
 alembic==1.4.3
 anaconda-client
-anaconda-project
 appdirs==1.4.4
 arff==0.9
 argh==0.26.2

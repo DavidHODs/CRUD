@@ -7,24 +7,7 @@ django-request==1.5.6
 djangorestframework==3.12.4
 fake-useragent==0.1.11
 glob2==0.7
-html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
 Jinja2==2.11.2
-json5==0.9.5
-jsonschema==3.2.0
-Markdown==3.3.4
-MarkupSafe==1.1.1
-pytest==5.4.3
-python-dateutil==2.8.1
-python-dotenv==0.17.0
-python-editor==1.0.4
-python-jsonrpc-server @ file:///tmp/build/80754af9/python-jsonrpc-server_1594397536060/work
-python-language-server @ file:///C:/ci/python-language-server_1594162130238/work
-python-socks==1.2.3
-records==0.5.2
-regex @ file:///C:/ci/regex_1593419644658/work
-requests @ file:///tmp/build/80754af9/requests_1592841827918/work
-sip==4.19.13
-six==1.15.0
 SQLAlchemy @ file:///C:/ci/sqlalchemy_1593445271541/work
 sqlparse==0.4.1
 whitenoise==5.2.0

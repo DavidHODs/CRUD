@@ -7,24 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}
-        Crude Logger
+        Categories
         {% endblock %}</title>
 </head>
 
 <body>
     {% block content %}
+    {% if category_posts %}
+    <h1>{{ cats }}</h1>
+    {% for post in category_posts %}
+    <hr>
     <ul>
-        {% for post in object_list %}
         <div class='post-entry'></div>
         <li>
             <h4><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a> | <small>{{ post.author }} -
-                    <a href="{% url 'categories' post.category %}">{{post.category }}</a> - {{ post.post_date}}</small>
+                    {{post.post_date }}</small>
             </h4>
             {{ post.image }}
             {{ post.body|slice:":130"|safe }}
         </li><br />
         {% endfor %}
     </ul>
+    {% else %}
+    <hr>
+    <h2>Sorry, there are no post under this category</h2>
+    {% endif %}
     {% endblock %}
 </body>
 

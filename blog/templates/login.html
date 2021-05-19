@@ -1,28 +1,47 @@
 {% extends 'base.html' %}
-{% block content %}
-<div id="login">
-    <form class="form-horizontal" name="LoginForm" action="/login/" method="post">
-        {% csrf_token %}
-        {% if next %}
-        <input type="hidden" name="next" value="{{ next }}" />
-        {% endif %}
-        <div class="control-group">
-            <label class="control-label" for="username">Username</label>
-            <div class="controls">
-                <input type="text" id="username" name="username" placeholder="Username">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        Login
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+    {% block content %}
+    <div id="login">
+        <form class="form-horizontal" name="LoginForm" action="/login/" method="post">
+            {% csrf_token %}
+            {% if next %}
+            <input type="hidden" name="next" value="{{ next }}" />
+            {% endif %}
+            <div class="control-group">
+                <label class="control-label" for="username">Username</label>
+                <div class="controls">
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
             </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="password">Password</label>
-            <div class="controls">
-                <input type="password" name="password" id="password" placeholder="Password">
+            <div class="control-group">
+                <label class="control-label" for="password">Password</label>
+                <div class="controls">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
             </div>
-        </div>
-        <div class="control-group">
-            <div class="controls">
-                <button type="submit" class="btn">Login</button>
+            <div class="control-group">
+                <div class="controls">
+                    <button style="background-color:black; border-color:blue; color:white" type="submit"
+                        class="btn">Login</button>
+                    <br><br>
+                </div>
             </div>
-        </div>
-    </form>
-</div>
-{% endblock %}
+        </form>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

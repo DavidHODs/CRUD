@@ -1,10 +1,26 @@
 {% extends 'base.html' %}
 
-{% block content %}
-<h4>Delete Post</h4>
-<form action='' method='post'>
-    {% csrf_token %}
-    <p>Are you sure you want to delete? "{{ post.title }}</p>
-    <input type='submit' value='Confirm'>
-</form>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        Delete Post
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+    {% block content %}
+    <form action='' method='post'>
+        {% csrf_token %}
+        <p>Are you sure you want to delete {{ post.title }}?</p>
+        <input type='submit' value='Confirm'>
+    </form>
+    {% endblock %}
+</body>
+
+</html>
